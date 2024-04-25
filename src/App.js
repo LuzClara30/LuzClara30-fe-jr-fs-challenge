@@ -1,8 +1,10 @@
-
+import React from 'react';
+import Navbar from './header/Navbar';
+import './globals.css';
 function App() {
   return (
     <div>
-      <h1>React App</h1>
+     <Navbar/>
     </div>
   );
 }

@@ -1,0 +1,128 @@
+/* Set margin-left for body to create space for the sidebar */
+body {
+  margin-left: 200px;
+  /* Add smooth transition when margin changes */
+  transition: margin-left 0.3s;
+}
+
+/* Styles for the sidebar */
+#sidebar {
+  /* Background color for the sidebar */
+  background-color: var(--primary-color);
+  /* Width of the sidebar */
+  width: 200px;
+  /* Height of the sidebar, adjust as needed */
+  height: 100%;
+  /* Fix the sidebar on the screen */
+  position: fixed;
+  /* Fix it at the top */
+  top: 0;
+  /* Fix it on the left side */
+  left: 0;
+  /* Add smooth transition for width changes */
+  transition: width 0.3s;
+}
+
+/* Styles for the sidebar toggle button */
+#toggle-sidebar {
+  /* Position the button absolutely inside the sidebar */
+  position: absolute;
+  /* Position it at the top of the sidebar */
+  top: 0;
+  /* Position it on the right side of the sidebar */
+  right: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the SVG icon inside the toggle button */
+#toggle-sidebar svg {
+  /* Adjust the width of the SVG */
+  width: 24px;
+  /* Adjust the height of the SVG */
+  height: 24px;
+}
+
+/* Hover styles for the sidebar toggle button */
+#toggle-sidebar:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+/* Styles for the collapsed sidebar */
+#sidebar.collapsed {
+  /* Collapsed width */
+  width: 70px;
+}
+
+/* Styles for icons inside the sidebar */
+.icon {
+  /* Hide icons by default */
+  display: none;
+}
+
+/* Styles for text inside the sidebar */
+.text {
+  display: inline-block;
+  /* Set font size to 18px */
+  font-size: 18px;
+  /* Set font family */
+  font-family: Arial, sans-serif;
+  white-space: pre;
+  /* Add transition for white-space change */
+  transition: white-space 0.3s ease;
+}
+
+/* Show icons when sidebar is collapsed */
+#sidebar.collapsed .icon {
+  display: inline-block;
+}
+
+/* Hide text when sidebar is collapsed */
+#sidebar.collapsed .text {
+  display: none;
+}
+
+/* Adjust body margin-left when sidebar is open */
+body.sidebar-open {
+  margin-left: 70px;
+}
+
+/* Styles for navigation list inside site content */
+.site-content nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+}
+
+/* Styles for list items inside navigation */
+.site-content nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Styles for links inside list items */
+.site-content nav ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  /* Remove underline from links */
+  text-decoration: none;
+}
+
+/* Adjust padding to center elements when sidebar is collapsed */
+#sidebar.collapsed li {
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/* Hover styles for list items */
+.site-content li:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
