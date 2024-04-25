@@ -52,7 +52,7 @@ const Navbar = () => {
                     src="/SideBarIcons/Add.svg"
                     alt="logo"
                   />
-                  <span className="text">Frequent URLs</span>
+                  <span className="text">Top 100 URLs</span>
                 </div>
               </Link>
             </li>

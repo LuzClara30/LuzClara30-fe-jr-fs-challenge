@@ -68,10 +68,11 @@ body {
 .text {
   display: inline-block;
   /* Set font size to 18px */
-  font-size: 18px;
+  font-size: 16px;
   /* Set font family */
-  font-family: Arial, sans-serif;
+  font-family: Georgia;
   white-space: pre;
+
   /* Add transition for white-space change */
   transition: white-space 0.3s ease;
 }

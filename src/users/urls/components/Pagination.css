@@ -1,0 +1,68 @@
+.pagination {
+    margin-top: 20px;
+    /* Add space above the pagination */
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.pagination button {
+    border-radius: 2px;
+    /* Rounded corners for buttons */
+    padding: 8px 16px;
+    /* Padding inside the buttons */
+    background-color: #fff;
+    /* Button background color */
+    color: var(--secondary-color);
+    /* Text color */
+    transition: background-color .3s;
+    /* Smooth transition for background color */
+    border: 1px solid var(--secondary-color);
+    /* Border for buttons */
+}
+
+.pagination button.active {
+    background-color: var(--primary-color);
+    /* Background color for active button */
+    color: var(--secondary-color);
+    /* Text color for active button */
+}
+
+.pagination .arrow {
+    color: var(--secondary-color);
+    /* Arrow color */
+    padding: 8px 16px;
+    /* Padding for arrows */
+    border: 1px solid var(--secondary-color);
+    /* Border for arrows */
+    cursor: pointer;
+    /* Show pointer cursor on hover */
+}
+
+.pagination .arrow img {
+    width: 10px;
+    /* Width of arrow image */
+    height: 10px;
+    /* Height of arrow image */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    /* In this block, we're applying specific styles when the screen has a maximum width of 600 pixels */
+
+    /* Selecting the element with the class "pagination" */
+    .pagination {
+        /* Allowing elements inside pagination to wrap into multiple lines */
+        flex-wrap: wrap;
+    }
+
+    /* Selecting buttons and arrows inside the element with the class "pagination" */
+    .pagination button,
+    .pagination .arrow {
+        /* Adding a margin of 5 pixels around buttons and arrows to separate them on small screens */
+        margin: 5px;
+    }
+}
