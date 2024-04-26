@@ -2,7 +2,6 @@ export const createShortUrl = async (fullUrl) => {
     try {
       // Setting the data to be sent in the POST request
       const postData = new URLSearchParams();
-      console.log("fullUrl", fullUrl);
       postData.append('full_url', fullUrl);
   
       // Making the POST request

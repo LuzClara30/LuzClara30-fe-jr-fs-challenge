@@ -70,7 +70,7 @@ body {
   /* Set font size to 18px */
   font-size: 16px;
   /* Set font family */
-  font-family: Georgia;
+  font-family:'system-ui';
   white-space: pre;
 
   /* Add transition for white-space change */

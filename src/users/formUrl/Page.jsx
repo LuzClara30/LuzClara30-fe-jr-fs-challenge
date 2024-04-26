@@ -22,7 +22,6 @@ const FormUrlPage = () => {
     // Call the createShortUrl function from the services
     createShortUrl(url)
       .then((data) => {
-        console.log(data);
         // Check if the short URL is available
         if (data.short_code) {
           setShortUrl(data.short_code);

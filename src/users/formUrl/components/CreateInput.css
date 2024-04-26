@@ -9,7 +9,9 @@
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 14px;
     box-sizing: border-box;
+    font-family: Arial;
 }
 
 /* styles for submit button*/
@@ -21,6 +23,7 @@
     background-color: var(--secondary-color);
     color: var(--beige-color);
     border: none;
+    font-family: Arial;
     border-radius: 5px;
     cursor: pointer;
 }
