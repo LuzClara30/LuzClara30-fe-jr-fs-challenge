@@ -1,0 +1,90 @@
+/* Styles for the container holding the URLs */
+.urls-container {
+  position: relative;
+  overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+}
+
+/* Styles for the URLs table */
+.urls-table {
+  width: 100%; /* Full width of container */
+  font-size: 0.875rem; 
+  text-align: left; /* Left-align text in the table */
+  border-collapse: collapse; /* Collapses table borders */
+}
+
+/* Styles for the table header */
+.table-header {
+  padding: 0.75rem; /* Padding for the table header */
+  text-transform: uppercase; /* Uppercase text */
+  background-color: var(--secondary-color); /* Background color for the table header */
+  color: var(--beige-color); /* Text color for the table header */
+}
+
+/* Styles for the table cells */
+.table-cell {
+  padding: 1rem; /* Padding for the table cells */
+  border-bottom: 1px solid #cbd5e0; /* Bottom border for table cells */
+}
+
+/* Styles for the links inside table cells */
+.item-href a {
+  color: var(--secondary-color); /* Link color */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: 700; /* Bold font weight for links */
+}
+
+/* Styles for the mobile version of the table */
+.table-mobile {
+  display: none;
+  width: 100%;
+}
+
+.table-mobile .row .column {
+  display: flex;
+}
+
+/* Styles for the header and content of mobile table columns */
+.table-mobile .row .column .header,
+.table-mobile .row .column .content {
+  border: 1px solid #cbd5e0;
+  border-bottom: none;
+  padding: 10px;
+}
+
+/* Styles for the header of mobile table columns */
+.table-mobile .row .column .header {
+  overflow-wrap: break-word;
+  width: 20%;
+  background-color: var(--secondary-color); /* Background color for table header */
+  color: var(--beige-color); /* Text color for table header */
+}
+
+/* Styles for the content of mobile table columns */
+.table-mobile .row .column .content {
+  width: 40%;
+  overflow-wrap: break-word;
+}
+
+/* Styles for alternating row background colors in mobile table */
+.table-mobile .row:nth-of-type(even) .column .content {
+  background-color: #e0e0e1;
+}
+
+/* Styles for the last column of mobile table */
+.table-mobile .row .column:last-of-type .content,
+.table-mobile .row .column:last-of-type .header {
+  border-right: 1px solid #cbd5e0;
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  /* Hides the desktop version of the table */
+  .urls-table {
+    display: none;
+  }
+
+  /* Displays the mobile version of the table */
+  .table-mobile {
+    display: block;
+  }
+}

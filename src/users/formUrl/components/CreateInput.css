@@ -1,0 +1,49 @@
+.containerInput{
+    text-align: center; /* horizontally centered elements */
+    justify-content: center;   
+}
+.input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* styles for submit button*/
+.submit {
+    margin-left: 5px;
+    width: 80%; /* Relative width */
+    max-width: 100px; /* Maximum width */
+    padding: 12px 20px;
+    background-color: var(--secondary-color);
+    color: var(--beige-color);
+    border: none;
+    font-family: Arial;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: var(--primary-color);
+}
+
+.submit:active {
+    background-color: var(--tertiary-color);
+}
+
+@media screen and (max-width: 590px){
+.containerInput{
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    justify-content: center; /* Center vertically */
+}
+.input, .submit {
+    width: 100%; /* We switch to full width on small screens*/
+    max-width: none; /* We remove the maximum width */
+}
+}
