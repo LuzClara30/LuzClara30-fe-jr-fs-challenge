@@ -1,0 +1,16 @@
+.container {
+    width: 90%; /* Changed to a smaller percentage to leave space on the sides */
+    margin: 0 auto; /* Centers the container */
+    max-width: 100%; /* Sets a maximum width to prevent it from expanding too much on large screens */
+    padding: 0 20px; /* Adds space on the sides of the container */
+}
+.title {
+    font-size: 24px; /* Keep the original font size */
+    font-weight: 700; /* Keep the original font weight */
+    color: var(--secondary-color); /* Keep the original text color */
+}
+.section {
+    margin: 20px 0; /* Adds space between sections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Keep the original shadow */
+    padding: 1.25rem; /* Keep the original padding */
+}
